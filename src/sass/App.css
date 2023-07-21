@@ -1,0 +1,34 @@
+body {
+  font-family: "Ysabeau Office", sans-serif;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+header {
+  background-color: #231A3B;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-right: 3rem;
+  margin-bottom: 7rem;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+header .welcome {
+  background-color: #231A3B;
+  margin: 3rem;
+  display: flex;
+  justify-content: space-around;
+}
+header .welcome img {
+  height: 403px;
+  width: auto;
+}/*# sourceMappingURL=App.css.map */
