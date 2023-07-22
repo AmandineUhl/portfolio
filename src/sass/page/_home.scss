@@ -1,0 +1,50 @@
+main {
+    background-color: $main_color;
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    
+    img {
+        height: 300px;
+        width: auto;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    &_content {
+        width: 50%;
+    }
+}
+
+.skills {
+    margin: 5rem;
+}
+
+.all_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 5rem;
+    
+    .card {
+        height: 250px;
+        width: 25%;
+        background-color: $card_color;
+        color: $secondary_color;
+        font-weight: bold;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        padding: 10px;
+        &_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+    }
+}

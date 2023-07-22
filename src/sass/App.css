@@ -1,12 +1,58 @@
 body {
   font-family: "Ysabeau Office", sans-serif;
   color: white;
-  font-weight: bold;
   margin: 0;
 }
 
+main {
+  background-color: #669BBC;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+}
+.presentation img {
+  height: 300px;
+  width: auto;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.presentation_content {
+  width: 50%;
+}
+
+.skills {
+  margin: 5rem;
+}
+
+.all_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 5rem;
+}
+.all_cards .card {
+  height: 250px;
+  width: 25%;
+  background-color: #fdf0d5;
+  color: #003049;
+  font-weight: bold;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 10px;
+}
+.all_cards .card_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header {
-  background-color: #231A3B;
+  background-color: #003049;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -19,11 +65,11 @@ header nav {
 }
 header nav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
 }
 header .welcome {
-  background-color: #231A3B;
+  background-color: #003049;
   margin: 3rem;
   display: flex;
   justify-content: space-around;
@@ -31,4 +77,9 @@ header .welcome {
 header .welcome img {
   height: 403px;
   width: auto;
+}
+
+footer {
+  background-color: #003049;
+  margin: 0;
 }/*# sourceMappingURL=App.css.map */

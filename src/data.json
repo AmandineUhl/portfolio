@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1",
+        "title":"HTML",
+        "icon":"fa-brands fa-html5",
+        "text":"Maîtrise avancée de HTML, le langage de base pour structurer et organiser le contenu des pages web. Je suis capable de créer des mises en page complexes et d'optimiser le code pour une meilleure performance."
+    },
+    {
+        "id":"2",
+        "title":"CSS",
+        "icon":"fa-brands fa-css3-alt",
+        "text":"Expertise approfondie en CSS, permettant de styliser les éléments HTML avec précision. Je suis passionné par la création de designs attrayants et intuitifs, en utilisant les dernières techniques et les meilleures pratiques."
+    },
+    {
+        "id":"3",
+        "title":"JAVASCRIPT",
+        "icon":"fa-brands fa-js",
+        "text":"Solide compétence en JavaScript, avec une compréhension approfondie des concepts fondamentaux et des fonctionnalités avancées."
+    },
+    {
+        "id":"4",
+        "title":"SASS",
+        "icon":"fa-brands fa-sass",
+        "text":"Fan de SASS, une extension de CSS qui facilite la création et la gestion des feuilles de style. J'utilise des variables, des mixins et des fonctions pour améliorer l'efficacité et la maintenabilité du code CSS, ce qui me permet de créer des styles cohérents et réutilisables."
+    },
+    {
+        "id":"5",
+        "title":"REACT",
+        "icon":"fa-brands fa-react",
+        "text":"React, une bibliothèque JavaScript populaire pour la construction d'interfaces utilisateur interactives et réactives. Je suis capable de créer des composants modulaires, de gérer l'état de l'application de manière efficace et d'optimiser les performances pour une expérience utilisateur fluide."
+    },
+    {
+        "id":"6",
+        "title":"Responsive-Design",
+        "icon":"",
+        "text":"Une approche de conception web qui garantit que les sites s'adaptent et fonctionnent de manière optimale sur tous les appareils et résolutions d'écran. Je suis capable de créer des mises en page fluides et flexibles, d'utiliser des médias queries et d'optimiser les images pour assurer une expérience utilisateur cohérente et agréable."
+    }
+]
