@@ -1,0 +1,56 @@
+/* SkyAnimation.css */
+
+/* SkyAnimation.css */
+
+#sky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1;
+  }
+  
+  .shooting-icon {
+    position: absolute;
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 0;
+  }
+  
+  /* Ajoutez des styles spécifiques pour chaque icône si nécessaire */
+  .fa-react {
+    color: #61dafb; /* Couleur pour l'icône React */
+  }
+  
+  .fa-sass {
+    color: #cc6699; /* Couleur pour l'icône Sass */
+  }
+  
+    .fa-js {
+    color: #f0db4f; /* Couleur pour l'icône JavaScript */
+  }
+  
+  .fa-css3-alt {
+    color: #2965f1; /* Couleur pour l'icône CSS */
+  }
+  
+  .fa-html5 {
+    color: #e34c26; /* Couleur pour l'icône HTML */
+  }
+  
+
+  .flashing-point {
+    position: absolute;
+    background-color: white; /* Couleur du point */
+    border-radius: 50%; /* Pour créer un cercle */
+  }
+  
+  
+  
+  
+  
+  
+  

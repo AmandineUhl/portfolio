@@ -1,0 +1,39 @@
+.presentation {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    position: relative;
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+.presentation {
+    .me {
+        position: absolute;
+        cursor: pointer;
+        top: 50%;
+        left: 40%;
+        white-space: nowrap;
+        font-size: 30px;
+    }
+
+    h2,
+    p {
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    &:hover {
+        .me {
+            opacity: 0;
+        }
+
+        h2,
+        p {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
