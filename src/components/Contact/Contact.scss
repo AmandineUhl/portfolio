@@ -60,3 +60,23 @@
         
     }
 }
+
+.modal {
+    
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+        h3 {
+            
+            text-align: center;
+        }
+
+        button{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    
+}

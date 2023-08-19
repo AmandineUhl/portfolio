@@ -16,6 +16,13 @@ function Footer() {
         <i className="fa-solid fa-location-dot"></i>
         <p>Le monde !!!</p>
       </div>
+      <div className="footer_content">
+      <i className="fa-brands fa-github"></i>
+      </div>
+      <div className="footer_content">
+      <i className="fa-brands fa-linkedin"></i>
+      </div>
+            
     </footer>
   );
 }

@@ -41,10 +41,13 @@ function Contact() {
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel='Confirmation Modal'
+        className="modal"
       >
+        <button onClick={closeModal}>X</button>
+        
         <h3>Message envoyé avec succès !</h3>
-        <p>Merci pour votre message.</p>
-        <button onClick={closeModal}>Fermer</button>
+        
+        
       </Modal>
           </div>
         );

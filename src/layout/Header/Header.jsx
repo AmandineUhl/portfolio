@@ -1,20 +1,28 @@
 import React from "react";
 import './Header.scss'
 import NavBar from "../../components/NavBar/NavBar";
+import { useLottie } from "lottie-react";
+import animationData from '../../../public/animation_lottie.json'; // Import du fichier JSON de l'animation
 
 function Header() {
+  const options = {
+    animationData: animationData,
+    loop: true
+  };
+  const { View } = useLottie(options);
   return (
     <header>
-      <NavBar/>
+      <NavBar />
       <div className="welcome">
         <div className="welcome_content">
           <p>Bienvenue, je suis</p>
           <h1>Amandine Uhl</h1>
+          <img src="moi.jpg" alt="" />
           <p>Développeuse Front-End</p>
-          <i className="fa-brands fa-github"></i>
-          <i className="fa-brands fa-linkedin"></i>
         </div>
-        <img src="moi.jpg" alt="" />
+        <div className="lottie-container">
+        <>{View}</>
+        </div>
       </div>
     </header>
   );
