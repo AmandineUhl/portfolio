@@ -1,3 +1,5 @@
+
+
 .skills {
     margin: 5rem;
     h2 {
@@ -6,4 +8,44 @@
     p {
         margin-bottom: 4rem;
     }
-}
+  
+    .slider-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    
+        .slider-circle {
+          width: 300px; // Ajustez la taille du cercle selon vos besoins
+          height: 300px; // Ajustez la taille du cercle selon vos besoins
+          position: relative;
+          animation: rotate 17s infinite linear; // Réglez la durée et le type d'animation selon vos besoins
+          transform-style: preserve-3d;
+    
+          @keyframes rotate {
+            from {
+              transform: rotateY(0deg);
+            }
+            to {
+              transform: rotateY(360deg);
+            }
+          }
+    
+          .slider-item {
+            width: 300px; // Ajustez la taille de la carte selon vos besoins
+            height: 400px; // Ajustez la taille de la carte selon vos besoins
+            background-color: #fff; // Ajustez la couleur de fond de la carte
+            padding: 20px; // Ajustez les espacements
+            border-radius: 10px; // Ajustez les coins arrondis
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Ajustez l'ombre
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center center -300px; // Ajustez la valeur Z pour ajuster la profondeur
+            transform: translate(-50%, -50%) rotateY(0deg) translateZ(300px);
+            transition: transform 0.5s ease-in-out; // Ajoutez une transition fluide
+          }
+        }
+      }
+    }
+  

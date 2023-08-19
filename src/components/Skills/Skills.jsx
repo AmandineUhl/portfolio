@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Cards from "../Card/Cards";
 import './Skills.scss'
 
@@ -42,6 +42,19 @@ function Skills() {
     },
   ];
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % skillsData.length);
+  };
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 3000); // Changement automatique toutes les 3 secondes
+    return () => clearInterval(interval);
+  }, []);
+
+  const rotateDeg = 360 / skillsData.length;
+
   return (
     <section className="skills">
       <div className="skills_content">
@@ -51,15 +64,24 @@ function Skills() {
           contacter pour en savoir davantage.
         </p>
       </div>
-      <div className="all_cards">
-        {skillsData.map((skill, index) => (
-          <Cards
-            key={index}
-            title={skill.title}
-            imgClass={skill.imgClass}
-            description={skill.description}
-          />
-        ))}
+      <div className="slider-container">
+        <div className="slider-circle">
+          {skillsData.map((skill, index) => (
+            <div
+              key={index}
+              className="slider-item"
+              style={{
+                transform: `rotateY(${(360 / skillsData.length) * index}deg) translateZ(300px)`,
+              }}
+            >
+              <Cards
+                title={skill.title}
+                imgClass={skill.imgClass}
+                description={skill.description}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
