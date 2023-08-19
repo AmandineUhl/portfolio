@@ -1,4 +1,20 @@
 footer {
-    
-    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    .footer_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        i {
+            color: #ff4500;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+           }
+
+    }
+   
 }

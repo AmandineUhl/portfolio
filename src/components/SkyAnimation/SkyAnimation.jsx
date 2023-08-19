@@ -103,9 +103,9 @@ const SkyAnimation = () => {
     }
   }, []);
 
-  const backgroundColor = "#12162e";
+  
 
-  return <div ref={skyRef} id="sky" style={{ backgroundColor }}></div>;
+  return <div ref={skyRef} id="sky"></div>;
 };
 
 export default SkyAnimation;

@@ -1,13 +1,46 @@
-import React from "react";
-import './Presentation.scss'
+import React, { useRef, useState } from "react";
+import './Presentation.scss';
+import { gsap } from "gsap";
+
 function Presentation() {
-  
+  const [showMeText, setShowMeText] = useState(true); 
+  const imageRef = useRef(null);
+  const textRef = useRef(null);
+
+  const handleImageClick = () => {
+    setShowMeText(false); 
+    gsap.fromTo(
+      imageRef.current,
+      { x: 0 },
+      {
+        x: "100%",
+        duration: 0,
+        onComplete: () => {
+          gsap.fromTo(
+            textRef.current,
+            { opacity: 0, x: -20 },
+            { opacity: 1, x: 0, duration: 0 }
+          );
+        },
+      }
+    );
+  };
+
   return (
-    <section className="presentation">
-      
-        <div className="me">Qui suis-je ?</div>
-      
-        <h2>Je me présente</h2>
+    <section className="presentation" id="presentation">
+      {showMeText && (
+        <div className="me" onClick={handleImageClick}>
+          Qui suis-je ?
+        </div>
+      )}
+
+      <div className="content-container">
+        <div ref={imageRef} className="image-container">
+          <img src="../../vaisseau.png" alt="fusee" />
+        </div>
+
+        <div ref={textRef} className="text-container">
+          <h2>Je me présente</h2>
         <p>
           Forte de plus de 10 ans d'expérience dans l'armée, spécialisée dans la
           programmation des matériels informatiques propres à l'armée, j'ai
@@ -28,7 +61,8 @@ function Presentation() {
           professionnel, ma curiosité et ma passion pour créer des expériences
           utilisateur exceptionnelles et des interfaces web innovantes.
         </p>
-      
+      </div>
+      </div>
     </section>
   );
 }

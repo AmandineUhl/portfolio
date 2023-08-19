@@ -1,7 +1,9 @@
 import react from "react";
 import Presentation from "../components/Presentation/Presentation";
 import Skills from "../components/Skills/Skills";
-import Carousel from "../components/Carousel/Carousel";
+import Projects from "../components/Projects/Projects";
+import Contact from "../components/Contact/Contact";
+
 import "./Home.scss";
 
 function Home() {
@@ -10,7 +12,8 @@ function Home() {
       <main>
         <Presentation />
         <Skills />
-        <Carousel />
+        <Projects />
+        <Contact/>
       </main>
     </div>
   );
