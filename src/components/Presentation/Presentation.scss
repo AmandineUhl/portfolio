@@ -1,7 +1,6 @@
 .presentation {
     margin: 5rem;
     position: relative;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +8,7 @@
     .me {
         position: absolute;
         cursor: pointer;
-        top: 50%;
-        left: 40%;
+        
         white-space: nowrap;
         font-size: 40px;
         z-index: 3;

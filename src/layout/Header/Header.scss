@@ -1,28 +1,25 @@
 header {
-    height: 100vh;
-    
 
-   
     .welcome {
-        margin-top: 10rem;
-       display: flex;
-       justify-content:space-around;
-       align-items: center;
-       width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
 
-       img{
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-       }
-       
-      
-        
-      
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+
+
+
         #lottie-animation {
             width: 300px;
-            
-            
+
+
         }
     }
 }

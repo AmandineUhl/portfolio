@@ -1,6 +1,5 @@
 .skills {
     margin: 5rem;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,9 +7,7 @@
     h2 {
         margin-bottom: 2rem;
     }
-    p {
-        margin-bottom: 7rem;
-    }
+    
  
     .slider-container {
         display: flex;
