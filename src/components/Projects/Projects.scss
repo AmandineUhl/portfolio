@@ -17,7 +17,11 @@ section {
       box-shadow: 0px 2px 10px #ff4500;
       padding: 20px;
       margin: 20px;
-      max-width: 300px;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
       .project-content {
         position: relative; 
@@ -28,44 +32,80 @@ section {
         margin-bottom: 10px;
       }
   
-      .project-image {
-        width: 300px;
-        border-radius: 5px;
-        max-height: 101px;
-      }
+     
+    }
+  }
+
+  .modal-container {
+    display: none; /* Par défaut, la modal est masquée */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transform: scaleY(0.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+    
+    &.active {
+      display: block; 
+    }
+    
   
-      .project-hover {
-        position: absolute;
-        top: -2rem;
-        background-color:white; 
-        color: black;
-        display: none; 
-        border-radius: 10px;
-        max-width: 300px;
-        
-      }
+    .modal-background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
   
-      &:hover .project-hover {
-        display: block; 
-      }
+      .modal {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        max-width: 80%;
+        overflow: auto;
+        text-align: center;
+        transform: scale(0);
+      animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
   
-      .project-text {
-        margin-top: 10px;
-        color: #666;
-      }
-  
-      .project-link {
-        background-color: transparent;
-        font-size: 12px;
-        cursor: pointer;
-        margin-top: 2rem;
-        text-decoration: none;
-        color: white;
-        i {
-            color: #ff4500;
+        .project-image {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 10px;
         }
   
+        .project-link {
+          display: block;
+          margin-top: 10px;
+          text-decoration: none;
+          color: #333;
+        }
+  
+        .project-text {
+          margin-top: 15px;
+        }
       }
     }
   }
+
+  @keyframes unfoldIn {
+    0% {
+      transform: scaleY(0.005) scaleX(0);
+    }
+    50% {
+      transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+      transform: scaleY(1) scaleX(1);
+    }
+  }
   
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }

@@ -1,16 +1,84 @@
-nav {
+.navbar {
+    position: absolute;
+    top: 0; 
+    right: 0;
+}
+
+.nav {
+    background-color: #4d0099;
+    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    margin: 3rem;   
-    a {
-        text-decoration: none;
-        font-size: 20px;
-        color: white;
-        opacity: 0.2;  
+    justify-content: space-around;
+    border-radius: 30px;
+   
+    &__contanier {
+        filter: url('#goo');
+        padding: 15px;
+        width: 550px;
     }
-    a:hover {
-        opacity: 1;
-        scale: 1.2;
+    &__blob {
+        width: 10%;
+        height: 80%;
+        position: absolute;
+        display: block;
+        background-color: transparent;
+        background-color: #4d0099;
+        top: 0;
+        border-radius: 30px;
+        z-index: -1;
+        transition: .7s cubic-bezier(1, -0.43, .21, 1.57);
+        transform: translateY(60%);
     }
+    &__item {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        width: 20%;
+        height: 55px;
+        cursor: pointer;
+
+        &-icon {
+            transition-duration: .5s;
+            transition-timing-function: ease-out;
+            transition-delay: .1s;
+            transform: scale(0.9);
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+        }
+
+        &:hover &-icon {
+            color: #ff4500;
+            transform: translateY(170%) scale(1.2);
+            transition-timing-function: cubic-bezier(.15, .65, .32, .21);
+        }
+
+        &::before {
+            display: block;
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 45px;
+            border-radius: 20px;
+            z-index: -1;
+            transition: .5s ease-out;
+            background-color: #4d0099;
+        }
+
+        &:hover::before {
+            transform: translateY(80%);
+            width: 138px;
+            
+        }
+    }
+
+    @for $i from 1 through 5 {
+        &__item:nth-child(#{$i}):hover~&__blob {
+            transform: translateY(150%) translateX(calc(calc(#{$i} - 3) * 200%)) scale(1.5, 1.2);
+        }
+    }
+
 }

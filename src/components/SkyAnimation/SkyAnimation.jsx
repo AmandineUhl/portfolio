@@ -8,17 +8,16 @@ const SkyAnimation = () => {
   useEffect(() => {
     const skyContainer = skyRef.current;
 
-    // Create the shooting icon
+    
     const icon = document.createElement('i');
     icon.className = 'shooting-icon fa-brands fa-react';
     skyContainer.appendChild(icon);
 
-    // Function to animate the shooting icon
+   
     function animateShootingIcon(icon) {
-      const side = Math.floor(Math.random() * 4); // Random side of the screen
-
+      const side = Math.floor(Math.random() * 4); 
       let startX, startY;
-      const offset = 100; // Offset to make the icon start slightly outside the screen
+      const offset = 100; 
 
       switch (side) {
         case 0:
@@ -61,15 +60,15 @@ const SkyAnimation = () => {
         onComplete: () => {
           setTimeout(() => {
             animateShootingIcon(icon);
-          }, 3000); // 3 seconds delay
+          }, 3000); 
         },
       });
     }
 
-    // Animate the shooting icon
+    
     animateShootingIcon(icon);
 
-    // Create flashing points
+   
     const numberOfPoints = 18;
 
     for (let i = 0; i < numberOfPoints; i++) {
@@ -80,7 +79,7 @@ const SkyAnimation = () => {
       createFlashingPoint(x, y, size);
     }
 
-    // Function to create flashing points
+    
     function createFlashingPoint(x, y, size) {
       const point = document.createElement('div');
       point.className = 'flashing-point';

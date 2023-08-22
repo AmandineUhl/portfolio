@@ -23,7 +23,7 @@
 }
 
 .card_back {
-  background-color: black;
+  background-color: #191919;
 }
 
 .card_front::before {
@@ -33,8 +33,7 @@
   left: -5px;
   width: calc(100% + 10px);
   height: calc(100% + 10px);
-  background: radial-gradient(circle, #ffeb3b, transparent);
-  opacity: 0.6;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   z-index: -1;
 }
 
@@ -47,27 +46,16 @@
   left: -2px;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  background: radial-gradient(circle, red, transparent);
-  opacity: 0.4;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   z-index: -2;
 }
 
-.card_front::before,
-.card_front::after {
-  animation: neon-glow 3s ease-in-out infinite alternate;
-}
 
-@keyframes neon-glow {
-  0% {
-    transform: scale(1);
-    opacity: 0.6;
-  }
 
-  100% {
-    transform: scale(1.1);
-    opacity: 0.2;
-  }
-}
+
+
+ 
+
 
 
 
