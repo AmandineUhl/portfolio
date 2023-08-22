@@ -44,14 +44,14 @@ function Skills() {
   ];
   const rotateDeg = 360 / skillsData.length;
 
-  const [translateZ, setTranslateZ] = useState(400); // Valeur initiale
+  const [translateZ, setTranslateZ] = useState(400); 
 
   useEffect(() => {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
        if (screenWidth < 768) {
-        setTranslateZ(200);
+        setTranslateZ(350);
       } else if (screenWidth < 992) {
         setTranslateZ(250);
       } else if (screenWidth < 1200) {
