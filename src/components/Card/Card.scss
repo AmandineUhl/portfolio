@@ -1,10 +1,15 @@
 .card {
   width: 250px;
   height: 250px;
-  perspective: 1000px;
+  perspective: 200px;
   cursor: pointer;
   position: relative;
   transition: transform 0.5s;
+  @media (max-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+  
 }
 
 .card_front,
@@ -37,8 +42,6 @@
   z-index: -1;
 }
 
-
-
 .card_front::after {
   content: "";
   position: absolute;
@@ -49,15 +52,6 @@
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   z-index: -2;
 }
-
-
-
-
-
- 
-
-
-
 
 .card_front {
   transform: rotateY(0deg);
@@ -102,4 +96,7 @@
   margin: 0;
   padding: 0 20px;
   text-align: center;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }

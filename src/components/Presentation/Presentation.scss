@@ -1,39 +1,38 @@
 .presentation {
-    margin: 5rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 7rem;
+    @media (max-width: 768px) {
+        margin-top: 3rem;
+        
+      }
 
     .me {
         position: absolute;
         cursor: pointer;
-        
         white-space: nowrap;
-        font-size: 40px;
+        font-size: 43px;
         z-index: 3;
+        animation: flash 1s infinite alternate;
     }
 
     .content-container {
         position: relative;
-        overflow: hidden;
         display: flex;
         align-items: center;
-        height: 300px;
-
-
-
-
+        overflow: hidden;
+        
         .image-container {
             position: absolute;
-            top: 40%;
+            top: 35%;
             left: 0;
             width: 100%;
             height: 100%;
             z-index: 1;
             transform: translateX(-100%);
             transition: transform 2s ease;
-
             img {
                 width: 25%;
                 height: auto;
@@ -66,3 +65,19 @@
         }
     }
 }
+
+@keyframes flash {
+    from {
+        color: #ff4500;
+        text-shadow: 0 0 5px #ff4500;
+    }
+    to {
+        color: white;
+        text-shadow: none;
+    }
+}
+
+
+
+
+

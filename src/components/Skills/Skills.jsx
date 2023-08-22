@@ -42,8 +42,33 @@ function Skills() {
     },
     
   ];
-
   const rotateDeg = 360 / skillsData.length;
+
+  const [translateZ, setTranslateZ] = useState(400); // Valeur initiale
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+
+       if (screenWidth < 768) {
+        setTranslateZ(200);
+      } else if (screenWidth < 992) {
+        setTranslateZ(250);
+      } else if (screenWidth < 1200) {
+        setTranslateZ(400);
+      } else {
+        setTranslateZ(500);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <section className="skills" id="skills">
@@ -61,7 +86,7 @@ function Skills() {
             key={index}
             className="slider-item"
             style={{
-              transform: `rotateY(${rotateDeg * index}deg) translateZ(400px)`,
+              transform: `rotateY(${rotateDeg * index}deg) translateZ(${translateZ}px)`,
               }}
             >
               <Cards

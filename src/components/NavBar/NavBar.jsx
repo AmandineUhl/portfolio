@@ -7,16 +7,16 @@ function NavBar() {
     <div className="nav__contanier">
     <div className="nav">
         <div className="nav__item">
-            <a href='#' className="nav__item-icon">Qui suis-je ?</a>
+            <a href='#presentation' className="nav__item-icon">Qui suis-je ?</a>
         </div>
         <div className="nav__item">
-        <a href='#' className="nav__item-icon">Compétences</a>
+        <a href='#skills' className="nav__item-icon">Compétences</a>
         </div>
         <div className="nav__item">
-        <a href='#' className="nav__item-icon">Projets</a>
+        <a href='#projects' className="nav__item-icon">Projets</a>
         </div>
         <div className="nav__item">
-        <a href='#' className="nav__item-icon">Contact</a>
+        <a href='#contact' className="nav__item-icon">Contact</a>
         </div>
         <div className="nav__item">
         <a href='#' className="nav__item-icon"><i class="fa-regular fa-flag"></i></a>

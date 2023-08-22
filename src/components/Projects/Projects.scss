@@ -1,15 +1,16 @@
 section {
-    margin: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+   margin-top: 6rem;
+   
 }
-
 .projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
+    width: 80%;
     margin-top: 3rem;
+    
+    
   
     .project {
       background-color: transparent;
@@ -24,27 +25,41 @@ section {
       align-items: center;
   
       .project-content {
-        position: relative; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
       }
   
       .project-title {
         font-size: 24px;
-        margin-bottom: 10px;
       }
   
      
     }
+    button{
+      background-color: #ff4500;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+      cursor: pointer;
+      margin: auto;
+      
+     
+      
+    }
   }
 
   .modal-container {
-    display: none; /* Par défaut, la modal est masquée */
+    display: none; 
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    transform: scaleY(0.01) scaleX(0);
+    background-color: rgba(97, 13, 153, 0.2); 
+    transform: scaleY(0.05) scaleX(0);
     animation: unfoldIn 1s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
     
     &.active {
@@ -59,31 +74,33 @@ section {
       height: 100%;
   
       .modal {
-        background-color: white;
+        height: 400px;
+        width: 500px;
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
         padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        max-width: 80%;
+        border-radius: 10px;
         overflow: auto;
         text-align: center;
         transform: scale(0);
-      animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
+        animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.840, 0.440, 1.000) forwards;
   
         .project-image {
-          max-width: 100%;
-          height: auto;
-          margin-bottom: 10px;
+          width: 100%;
+          height: 200px;
         }
   
         .project-link {
           display: block;
-          margin-top: 10px;
+          font-weight: bold;
+          margin-top: 1rem;
           text-decoration: none;
-          color: #333;
+          color: #ff4500;
         }
-  
         .project-text {
-          margin-top: 15px;
+          margin-top: 1rem;
+          font-weight: bold;
+          color: white;
+          padding: 1rem;
         }
       }
     }

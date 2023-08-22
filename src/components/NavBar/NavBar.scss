@@ -10,12 +10,16 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-right: 10px;
    
     &__contanier {
         filter: url('#goo');
-        padding: 15px;
         width: 550px;
+        @media (max-width: 768px) {
+            width: 350px;
+          }
     }
     &__blob {
         width: 10%;
@@ -39,6 +43,10 @@
         width: 20%;
         height: 55px;
         cursor: pointer;
+        @media (max-width: 768px) {
+           font-size: 12px;
+           height: 40px;
+          }
 
         &-icon {
             transition-duration: .5s;
@@ -74,6 +82,7 @@
             
         }
     }
+   
 
     @for $i from 1 through 5 {
         &__item:nth-child(#{$i}):hover~&__blob {

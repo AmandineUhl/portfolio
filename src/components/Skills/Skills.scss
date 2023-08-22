@@ -1,46 +1,45 @@
 .skills {
-    margin: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h2 {
-        margin-bottom: 2rem;
+
+    #skills {
+      margin: 0;
+      margin-top: 5rem;
     }
-    
-    
- 
+
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+
     .slider-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-top: 5rem;
-       
-    
-        .slider-circle {
-          width: 300px; 
-          height: 300px; 
-          position: relative;
-          animation: rotate 60s infinite linear;
-          transform-style: preserve-3d;
-          
-    
-          @keyframes rotate {
-            from {
-              transform: rotateY(0deg);
-            }
-            to {
-              transform: rotateY(360deg);
-            }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-top: 5rem;
+
+
+
+      .slider-circle {
+        width: 300px;
+        height: 300px;
+        position: relative;
+        animation: rotate 60s infinite linear;
+        transform-style: preserve-3d;
+        
+
+
+        @keyframes rotate {
+          from {
+            transform: rotateY(0deg);
           }
-    
-          .slider-item {
-            position: absolute;
-            margin-left: 2rem;
-           
+
+          to {
+            transform: rotateY(360deg);
           }
+        }
+
+        .slider-item {
+          position: absolute;
         }
       }
     }
-  
+  }

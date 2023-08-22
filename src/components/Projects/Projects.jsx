@@ -64,7 +64,6 @@ function Projects() {
           </div>
         ))}
       </div>
-      {/* Modal */}
       {activeProject && (
         <div className="modal-container active">
           <div className="modal-background" onClick={closeModal}>
@@ -74,10 +73,11 @@ function Projects() {
                 src={activeProject.imageSrc}
                 alt={activeProject.title}
               />
+              
+              <p className="project-text">{activeProject.description}</p>
               <a className="project-link" href={activeProject.link}>
                 <i className="fa-solid fa-link"></i> lien
               </a>
-              <p className="project-text">{activeProject.description}</p>
             </div>
           </div>
         </div>

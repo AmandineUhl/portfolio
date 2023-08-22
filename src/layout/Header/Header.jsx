@@ -15,12 +15,12 @@ function Header() {
       <NavBar />
       <div className="welcome">
         <div className="welcome_content">
-          <p>Bienvenue, je suis</p>
-          <h1>Amandine Uhl</h1>
-          <img src="moi.jpg" alt="" />
+          <h1>Amandine UHL</h1>
           <p>Développeuse Front-End</p>
+          <img src="moi.jpg" alt="" />
+          
         </div>
-        <div className="lottie-container">
+        <div className="lottie-container"style={{ width: '200px', height: '200px' }}>
         <>{View}</>
         </div>
       </div>
