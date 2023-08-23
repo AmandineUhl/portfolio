@@ -28,7 +28,7 @@ function Skills() {
       title: "SASS",
       iconClass: "fa-sass",
       description:
-        "Fan de SASS, une extension de CSS qui facilite la création et la gestion des feuilles de style. J'utilise des variables, des mixins et des fonctions pour améliorer l'efficacité et la maintenabilité du code CSS, ce qui me permet de créer des styles cohérents et réutilisables.",
+        "SASS, une extension de CSS qui facilite la création et la gestion des feuilles de style. J'utilise des variables, des mixins et des fonctions pour améliorer l'efficacité et la maintenabilité du code CSS, ce qui me permet de créer des styles cohérents et réutilisables.",
     },
     {
       title: "REACT",
@@ -57,7 +57,7 @@ function Skills() {
       } else if (screenWidth < 1200) {
         setTranslateZ(400);
       } else {
-        setTranslateZ(400);
+        setTranslateZ(500);
       }
     };
 

@@ -20,7 +20,7 @@ function Header() {
           <img src="moi.webp" alt="" />
           
         </div>
-        <div className="lottie-container"style={{ width: '200px', height: '200px' }}>
+        <div className="lottie-container">
         <>{View}</>
         </div>
       </div>

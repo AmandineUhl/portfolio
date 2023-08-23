@@ -37,6 +37,9 @@
             img {
                 width: 20%;
                 height: auto;
+                @media (min-width: 1400px) {
+                    width: 10%; 
+                  }
             }
         }
 

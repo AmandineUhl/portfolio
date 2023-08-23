@@ -16,7 +16,10 @@
    
     &__contanier {
         filter: url('#goo');
-        width: 550px;
+        width: 750px;
+        @media (max-width: 1400px) {
+            width: 550px;
+          }
         @media (max-width: 768px) {
             width: 350px;
           }

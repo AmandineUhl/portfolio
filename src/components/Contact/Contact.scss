@@ -34,8 +34,12 @@
         background-color: transparent;
         color: white;
         padding: 10px;
-        font-size: 16px;
-        width: 250px;
+        font-size: 18px;
+        width: 350px;
+        @media (max-width: 1400px) {
+            width: 200px;
+            font-size: 16px;
+          }
     }
 
     textarea {
@@ -48,17 +52,20 @@
         color: black;
         border: none;
         padding: 10px 15px;
-        font-size: 16px;
+        font-size: 20px;
         cursor: pointer;
         transition: background-color 0.3s ease;
         align-self: center;
         margin-top: 2rem;
         font-weight: bold;
         border-radius: 5px;
+        @media (max-width: 1400px) {
+            font-size: 16px;
+          }
+        
     }
 
     #button:hover {
         background-color: #cc3700;
-        
     }
 }

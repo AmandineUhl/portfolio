@@ -1,80 +1,82 @@
 .skills {
 
-    #skills {
-      margin: 0;
-      margin-top: 5rem;
-      overflow: hidden;
-    }
-
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-
-    .slider-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      margin-top: 5rem;
-      
-      .slider-circle {
-        width: 300px;
-        height: 300px;
-        position: relative;
-        animation: rotate 60s infinite linear;
-        transform-style: preserve-3d;
-        @media (max-width: 768px) {
-          width: 250px;
-          height: 250px;
-        }
-        @media (max-width: 650px) {
-          display: none;
-        }
-        
-      
-        @keyframes rotate {
-          from {
-            transform: rotateY(0deg);
-          }
-
-          to {
-            transform: rotateY(360deg);
-          }
-        }
-
-        .slider-item {
-          position: absolute;
-        }
-      }
-    }
+  #skills {
+    margin: 0;
+    margin-top: 5rem;
+    overflow: hidden;
   }
 
-  .fa-js {
-    color: rgb(219, 219, 24);
+  h2 {
+    margin-bottom: 1.5rem;
   }
 
-  .fa-html5 {
-    color: orangered;
-  }
-  
-  .fa-css3-alt {
-    color: rgb(14, 14, 226);
-  }
-
-  .fa-sass {
-    color: rgb(214, 70, 214);
-  }
-
-  .skills_mobile {
-    display: flex; 
-    flex-wrap: wrap; 
-    align-items: center;
+  .slider-container {
+    display: flex;
     justify-content: center;
-    gap: 2rem;
-  
-        @media (min-width: 651px) {
-        display: none; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 10rem;
+
+    .slider-circle {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      animation: rotate 60s infinite linear;
+      transform-style: preserve-3d;
+
+      @media (max-width: 768px) {
+        width: 250px;
+        height: 250px;
       }
-    
+
+      @media (max-width: 650px) {
+        display: none;
+      }
+
+
+      @keyframes rotate {
+        from {
+          transform: rotateY(0deg);
+        }
+
+        to {
+          transform: rotateY(360deg);
+        }
+      }
+
+      .slider-item {
+        position: absolute;
+      }
+    }
   }
+}
+
+.fa-js {
+  color: rgb(219, 219, 24);
+}
+
+.fa-html5 {
+  color: orangered;
+}
+
+.fa-css3-alt {
+  color: rgb(14, 14, 226);
+}
+
+.fa-sass {
+  color: rgb(214, 70, 214);
+}
+
+.skills_mobile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  @media (min-width: 651px) {
+    display: none;
+  }
+
+}
