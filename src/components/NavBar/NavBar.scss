@@ -21,7 +21,11 @@
             width: 550px;
           }
         @media (max-width: 768px) {
-            width: 350px;
+            width: 400px;
+          }
+          @media (max-width: 480px) {
+            width: 300px;
+            
           }
     }
     &__blob {
@@ -44,12 +48,17 @@
         align-items: center;
         font-size: 16px;
         width: 20%;
-        height: 55px;
+        height: 70px;
         cursor: pointer;
+        @media (max-width: 1440px) {
+            height: 55px;
+           }
         @media (max-width: 768px) {
-           font-size: 12px;
-           height: 40px;
-          }
+           height: 45px;
+          } 
+          @media (max-width: 480px) {
+            height: 40px;
+           }
 
         &-icon {
             transition-duration: .5s;
@@ -58,7 +67,7 @@
             transform: scale(0.9);
             text-decoration: none;
             color: white;
-            font-weight: bolder;
+            
         }
 
         &:hover &-icon {
@@ -81,8 +90,10 @@
 
         &:hover::before {
             transform: translateY(80%);
-            width: 138px;
-            
+            width: 160px;
+            @media (max-width: 768px) {
+                width: 130px;
+            }
         }
     }
    

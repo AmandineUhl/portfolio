@@ -20,17 +20,15 @@
 
     .slider-circle {
       width: 300px;
-      height: 300px;
+      height: 500px;
       position: relative;
-      animation: rotate 60s infinite linear;
+      animation: rotate 90s infinite linear;
       transform-style: preserve-3d;
-
-      @media (max-width: 768px) {
+      @media (max-width: 1400px) {
         width: 250px;
-        height: 250px;
+        height: 400px;
       }
-
-      @media (max-width: 650px) {
+      @media (max-width: 768px) {
         display: none;
       }
 
@@ -39,7 +37,6 @@
         from {
           transform: rotateY(0deg);
         }
-
         to {
           transform: rotateY(360deg);
         }
@@ -75,7 +72,7 @@
   justify-content: center;
   gap: 2rem;
 
-  @media (min-width: 651px) {
+  @media (min-width: 769px) {
     display: none;
   }
 

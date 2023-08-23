@@ -14,11 +14,9 @@ function Header() {
     <header>
       <NavBar />
       <div className="welcome">
-        <div className="welcome_content">
+        <div className="welcome_content" >
           <h1>Amandine UHL</h1>
           <p>Développeuse Front-End</p>
-          <img src="moi.webp" alt="" />
-          
         </div>
         <div className="lottie-container">
         <>{View}</>
