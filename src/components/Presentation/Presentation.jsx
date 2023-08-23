@@ -36,7 +36,7 @@ function Presentation() {
 
       <div className="content-container">
         <div ref={imageRef} className="image-container">
-          <img src="../../vaisseau.png" alt="fusee" />
+          <img src="../../vaisseau.webp" alt="fusee" />
         </div>
 
         <div ref={textRef} className="text-container">

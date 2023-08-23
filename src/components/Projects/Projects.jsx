@@ -5,36 +5,36 @@ function Projects() {
   const [activeProject, setActiveProject] = useState(null);
   const projectsData = [
     {
-      title: "Booki",
-      imageSrc: "booki.png",
+      title: "Portfolio Architecte",
+      imageSrc: "sophie.webp",
       description:
-        "Lorem ipsum dolor sit amet. Ut ipsum modi vel assumenda dolorum eos ullam numquam. Ut dicta quaerat a dolores illo qui mollitia ratione id repudiandae consequatur aut enim quaerat. Et internos nihil eos nemo voluptatem rem beatae laudantium eos tempore cupiditate aut expedita iure qui temporibus praesentium.",
-      link: "https://amandineuhl.github.io/booki/",
+        "Création d'un page web dynamique avec JS. la page de présentation des travaux de l'architecte avec filtre, la page de connexion de l'administrateur du site ainsi que la modale permettant d'uploader de nouveaux médias",
+      link: "https://github.com/AmandineUhl/Projet-6",
     },
     {
       title: "Print It",
-      imageSrc: "print it.png",
+      imageSrc: "print-it.webp",
       description:
         "l'incontournable carousel en JS, ce projet avait pour but de rendre un site dynamique en ajoutant un carousel sur la banner",
       link: "https://amandineuhl.github.io/Print-it-JS/",
     },
     {
       title: "Oh my food",
-      imageSrc: "ohmyfood.png",
+      imageSrc: "ohmyfood.webp",
       description:
-        "Lorem ipsum dolor sit amet. Ut ipsum modi vel assumenda dolorum eos ullam numquam. Ut dicta quaerat a dolores illo qui mollitia ratione id repudiandae consequatur aut enim quaerat. Et internos nihil eos nemo voluptatem rem beatae laudantium eos tempore cupiditate aut expedita iure qui temporibus praesentium.",
+        "Intégration d'un site responsive en mobile first. Utilisation du css pour créer un site animé !!!",
       link: "https://amandineuhl.github.io/oh-my-food/",
     },
     {
       title: "Nina Carducci",
-      imageSrc: "Nina Carducci.png",
+      imageSrc: "Nina-Carducci.webp",
       description:
         "Optimisation SEO du site de Nina Carducci. J'ai utilisé les outils d'audit google light house, wave et Google Rich Snippet pour orienter les améliorations à apporter",
       link: "https://amandineuhl.github.io/nina_carducci/",
     },
     {
       title: "Kasa",
-      imageSrc: "kasa.png",
+      imageSrc: "kasa.webp",
       description:
         "Ce projet avait pour but la refonte de la plateform Kasa.Mon rôle a consisté à mettre en œuvre les maquettes Figma avec React, en créant des composants et des routes. Mon travail a contribué à moderniser l'expérience utilisateur de cette plateforme de location. ",
       link: "https://github.com/AmandineUhl/kasa",

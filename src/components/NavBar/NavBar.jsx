@@ -19,7 +19,7 @@ function NavBar() {
         <a href='#contact' className="nav__item-icon">Contact</a>
         </div>
         <div className="nav__item">
-        <a href='#' className="nav__item-icon"><i class="fa-regular fa-flag"></i></a>
+        <a href='https://www.linkedin.com/in/amandine-uhl-56176222b/' className="nav__item-icon"><i className="fa-brands fa-linkedin"></i></a>
         </div>
         
         <div className="nav__blob"></div>

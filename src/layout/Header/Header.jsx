@@ -17,7 +17,7 @@ function Header() {
         <div className="welcome_content">
           <h1>Amandine UHL</h1>
           <p>Développeuse Front-End</p>
-          <img src="moi.jpg" alt="" />
+          <img src="moi.webp" alt="" />
           
         </div>
         <div className="lottie-container"style={{ width: '200px', height: '200px' }}>
