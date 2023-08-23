@@ -15,19 +15,24 @@
       justify-content: center;
       align-items: center;
       width: 100%;
+      height: 100%;
       margin-top: 5rem;
-
-
-
+      
       .slider-circle {
         width: 300px;
         height: 300px;
         position: relative;
         animation: rotate 60s infinite linear;
         transform-style: preserve-3d;
+        @media (max-width: 768px) {
+          width: 250px;
+          height: 250px;
+        }
+        @media (max-width: 650px) {
+          display: none;
+        }
         
-
-
+      
         @keyframes rotate {
           from {
             transform: rotateY(0deg);
@@ -59,4 +64,17 @@
 
   .fa-sass {
     color: rgb(214, 70, 214);
+  }
+
+  .skills_mobile {
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  
+        @media (min-width: 651px) {
+        display: none; 
+      }
+    
   }

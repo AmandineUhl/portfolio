@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Cards from "../Card/Cards";
 import './Skills.scss'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
+import { Carousel } from "react-responsive-carousel";
 
 function Skills() {
   const skillsData = [
@@ -50,14 +52,12 @@ function Skills() {
     const handleResize = () => {
       const screenWidth = window.innerWidth;
 
-       if (screenWidth < 768) {
-        setTranslateZ(350);
-      } else if (screenWidth < 992) {
-        setTranslateZ(250);
+      if (screenWidth < 992) {
+        setTranslateZ(300);
       } else if (screenWidth < 1200) {
         setTranslateZ(400);
       } else {
-        setTranslateZ(500);
+        setTranslateZ(400);
       }
     };
 
@@ -97,8 +97,20 @@ function Skills() {
             </div>
           ))}
         </div>
+        <div className="skills_mobile">
+      {skillsData.map((skill, index) => (
+        <div key={index} className="carousel-item">
+          <Cards
+            title={skill.title}
+            iconClass={skill.iconClass}
+            description={skill.description}
+          />
+        </div>
+      ))}
+    </div>
       </div>
     </section>
+    
   );
 }
 
