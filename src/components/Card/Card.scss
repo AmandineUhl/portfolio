@@ -93,7 +93,7 @@
 }
 
 .card_icon {
-  i{
+  i {
     font-size: 22px;
   }
 }
@@ -103,7 +103,5 @@
   margin: 0;
   padding: 0 20px;
   text-align: center;
-  @media (max-width: 768px) {
-    font-size: 12px;
-  }
+ 
 }

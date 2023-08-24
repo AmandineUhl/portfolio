@@ -1,28 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Cards from "../Card/Cards";
 import './Skills.scss'
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import the carousel styles
-import { Carousel } from "react-responsive-carousel";
+
+
+
 
 function Skills() {
   const skillsData = [
+    {
+      title: "REACT",
+      iconClass: "fa-react",
+      description:
+        "React, une bibliothèque JavaScript populaire pour la construction d'interfaces utilisateur interactives et réactives. Je suis capable de créer des composants modulaires, de gérer l'état de l'application de manière efficace et d'optimiser les performances pour une expérience utilisateur fluide.",
+    },
+    {
+      title: "REDUX",
+      iconClass: "",
+      description:
+        "J'intègre habilement les appels d'APIs grâce à des middlewares, permettant ainsi des interactions fluides entre le front-end et le back-end. Ceci garantit des applications réactives et à jour en temps réel.",
+    },
     {
       title: "HTML",
       iconClass: "fa-html5",
       description:
         "Maîtrise avancée de HTML, le langage de base pour structurer et organiser le contenu des pages web. Je suis capable de créer des mises en page complexes et d'optimiser le code pour une meilleure performance.",
-    },
-    {
-      title: "CSS",
-      iconClass: "fa-css3-alt",
-      description:
-        "Expertise approfondie en CSS, permettant de styliser les éléments HTML avec précision. Je suis passionné par la création de designs attrayants et intuitifs, en utilisant les dernières techniques et les meilleures pratiques.",
-    },
-    {
-      title: "JAVASCRIPT",
-      iconClass: "fa-js",
-      description:
-        "Solide compétence en JavaScript, avec une compréhension approfondie des concepts fondamentaux et des fonctionnalités avancées.",
     },
     {
       title: "SASS",
@@ -31,16 +32,28 @@ function Skills() {
         "SASS, une extension de CSS qui facilite la création et la gestion des feuilles de style. J'utilise des variables, des mixins et des fonctions pour améliorer l'efficacité et la maintenabilité du code CSS, ce qui me permet de créer des styles cohérents et réutilisables.",
     },
     {
-      title: "REACT",
-      iconClass: "fa-react",
+      title: "JAVASCRIPT",
+      iconClass: "fa-js",
       description:
-        "React, une bibliothèque JavaScript populaire pour la construction d'interfaces utilisateur interactives et réactives. Je suis capable de créer des composants modulaires, de gérer l'état de l'application de manière efficace et d'optimiser les performances pour une expérience utilisateur fluide.",
+        "Solide compétence en JavaScript, avec une compréhension approfondie des concepts fondamentaux et des fonctionnalités avancées.",
     },
     {
       title: "Responsive-Design",
       iconClass: "",
       description:
         "Je suis capable de créer des mises en page fluides et flexibles, d'utiliser des médias queries et d'optimiser les images pour assurer une expérience utilisateur cohérente et agréable.",
+    },
+    {
+      title: "UI/UX Design",
+      iconClass: "",
+      description:
+        "Je suis compétente en conception d'interfaces utilisateur (UI) et d'expériences utilisateur (UX). Mon expertise réside dans la création d'interfaces esthétiques et fonctionnelles, en harmonie avec les besoins des utilisateurs.",
+    },
+    {
+      title: "Optimisation SEO",
+      iconClass: "",
+      description:
+        "Je maîtrise l'optimisation pour les moteurs de recherche (SEO), améliorant la visibilité en ligne grâce à des stratégies ciblées. Mon expertise comprend l'analyse des mots-clés, l'optimisation des balises et la création de contenu pertinent pour obtenir un meilleur classement sur les moteurs de recherche.",
     },
     
   ];
