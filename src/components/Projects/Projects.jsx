@@ -15,7 +15,7 @@ function Projects() {
       title: "Print It",
       imageSrc: "print-it.webp",
       description:
-        "l'incontournable carousel en JS, ce projet avait pour but de rendre un site dynamique en ajoutant un carousel sur la banner",
+        "l'incontournable carousel en JS, ce projet avait pour but de rendre un site dynamique en ajoutant un carousel sur la bannière",
       link: "https://amandineuhl.github.io/Print-it-JS/",
     },
     {
