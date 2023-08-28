@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Card.scss';
 
 function Cards(props) {
-  const { title, iconClass, description, image} = props;
+  const { title, description, image} = props;
   const [isFlipped, setIsFlipped] = useState(false);
 
   const toggleFlip = () => {
