@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Card.scss';
 
 function Cards(props) {
-  const { title, iconClass, description} = props;
+  const { title, iconClass, description, image} = props;
   const [isFlipped, setIsFlipped] = useState(false);
 
   const toggleFlip = () => {
@@ -18,7 +18,7 @@ function Cards(props) {
       
       <div className="card_front">
         <div className="card_icon">
-          <i className={`fa-brands ${iconClass}`}></i>
+          <img src={image} alt="" />
         </div>
         <h3>{title}</h3>
       </div>
